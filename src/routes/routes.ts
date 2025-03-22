@@ -6,13 +6,13 @@ import { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
 
 export async function routes(fastify: FastifyInstance) {
   fastify.post(
-    "/customer",
+    "/create-account",
     async (request: FastifyRequest, reply: FastifyReply) => {
       return null;
     }
   );
   fastify.get(
-    "/customers",
+    "/moments",
     async (request: FastifyRequest, reply: FastifyReply) => {
       return { message: "Hello World" };
     }
